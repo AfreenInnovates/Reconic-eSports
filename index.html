@@ -8,12 +8,13 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- /* ******************************* HEADER  STARTS **************************** */ -->
+    <!-- /* ******************************* NAVBAR  STARTS **************************** */ -->
     <header>
       <a href="index.html" class="logo">Reconic eSports</a>
       <ul class="nav-links">
         <li><a href="index.html" class="home">Home</a></li>
         <li><a href="#about">About</a></li>
+        <li><a href="team.html">Team</a></li>
         <li><a href="#tournaments">Tournaments</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -24,7 +25,7 @@
         <i class="fa-solid fa-x" style="color: white"></i>
       </div>
     </header>
-    <!-- /* ******************************* HEADER  ENDS **************************** */ -->
+    <!-- /* ******************************* NAVBAR  ENDS **************************** */ -->
 
     <!-- /* *********************** ENTRY PAGE ************************ */ -->
     <div class="banner">
@@ -173,19 +174,36 @@
       />
       <div class="contact-form">
         <h1>Contact Us :)</h1>
-        <div class="input">
-          <p>Enter name:</p>
-          <input type="text" placeholder="Your name... " required />
-        </div>
-        <div class="input">
-          <p>Enter email:</p>
-          <input type="text" placeholder="Your email... " required />
-        </div>
-        <div class="input">
-          <p>Message:</p>
-          <textarea placeholder="Your message..." rows="5" required></textarea>
-        </div>
-        <button class="submit-button">Submit</button>
+        <form action="https://formspree.io/f/xjvqkrdg" method="POST">
+          <div class="input">
+            <p>Enter name:</p>
+            <input
+              type="text"
+              placeholder="Your name... "
+              required
+              name="name"
+            />
+          </div>
+          <div class="input">
+            <p>Enter email:</p>
+            <input
+              type="text"
+              placeholder="Your email... "
+              required
+              name="email"
+            />
+          </div>
+          <div class="input">
+            <p>Message:</p>
+            <textarea
+              placeholder="Your message..."
+              rows="5"
+              required
+              name="message"
+            ></textarea>
+          </div>
+          <button class="submit-button">Submit</button>
+        </form>
       </div>
     </div>
 
